@@ -501,11 +501,11 @@ else()
       set(CPACK_PACKAGE_NAME "${CMAKE_PROJECT_NAME}")
       set(CPACK_DEBIAN_PACKAGE_MAINTAINER "${LINUX_MAINTAINER_EMAIL}")
       set(CPACK_PACKAGE_VERSION "${CMAKE_PROJECT_VERSION}")
-      set(CPACK_PACKAGE_FILE_NAME "${CPACK_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}-linux-x86_64")
+      set(CPACK_PACKAGE_FILE_NAME "${CPACK_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}-linux-${UBUNTU_VERSION}")
 
       set(CPACK_GENERATOR "DEB")
       set(CPACK_DEBIAN_PACKAGE_DEPENDS
-          "obs-studio (>= 27.0.0), libqt5core5a (>= 5.9.0~beta), libqt5gui5 (>= 5.3.0), libqt5widgets5 (>= 5.7.0)"
+          "obs (>= 1.5.0), libqt5core5a (>= 5.9.0~beta), libqt5gui5 (>= 5.3.0), libqt5widgets5 (>= 5.7.0)"
       )
 
       set(CPACK_OUTPUT_FILE_PREFIX ${CMAKE_SOURCE_DIR}/release)

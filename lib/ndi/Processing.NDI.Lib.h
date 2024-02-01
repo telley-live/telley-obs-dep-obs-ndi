@@ -50,18 +50,18 @@
 #			ifdef _WIN64
 #				define NDILIB_LIBRARY_NAME  "Processing.NDI.Lib.x64.dll"
 #				define NDILIB_REDIST_FOLDER "NDI_RUNTIME_DIR_V5"
-#				define NDILIB_REDIST_URL    "http://new.tk/NDIRedistV5"
+#				define NDILIB_REDIST_URL    "https://github.com/obs-ndi/obs-ndi/raw/d462e9f83f0e06837a83331b1f71053b2132e751/runtime/NDI%205.5.3%20Runtime.exe"
 #			else // _WIN64
 #				define NDILIB_LIBRARY_NAME  "Processing.NDI.Lib.x86.dll"
 #				define NDILIB_REDIST_FOLDER "NDI_RUNTIME_DIR_V5"
-#				define NDILIB_REDIST_URL    "http://new.tk/NDIRedistV5"
+#				define NDILIB_REDIST_URL    "https://github.com/obs-ndi/obs-ndi/raw/d462e9f83f0e06837a83331b1f71053b2132e751/runtime/NDI%205.5.3%20Runtime.exe"
 #			endif // _WIN64
 #		endif // PROCESSINGNDILIB_EXPORTS
 #	else // _WIN32
 #		ifdef __APPLE__
 #			define NDILIB_LIBRARY_NAME  "libndi.dylib"
 #			define NDILIB_REDIST_FOLDER "NDI_RUNTIME_DIR_V5"
-#			define NDILIB_REDIST_URL    "http://new.tk/NDIRedistV5Apple"
+#			define NDILIB_REDIST_URL    "https://github.com/obs-ndi/obs-ndi/raw/d462e9f83f0e06837a83331b1f71053b2132e751/runtime/libNDI_5.5.3_for_Mac.pkg"
 #		else // __APPLE__
 #			define NDILIB_LIBRARY_NAME  "libndi.so.5"
 #			define NDILIB_REDIST_FOLDER "NDI_RUNTIME_DIR_V5"
